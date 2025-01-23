@@ -1,8 +1,9 @@
 {
   "canisters": {
     "icrc_backend": {
-      "main": "src/icrc_backend/main.mo",
-      "type": "motoko"
+      "main": "src/icrc_backend/Token.mo",
+      "type": "motoko",
+      "args": "-v --incremental-gc"
     },
     "icrc_frontend": {
       "dependencies": [
@@ -18,7 +19,10 @@
   "defaults": {
     "build": {
       "args": "",
-      "packtool": ""
+      "packtool": "mops sources"
+    },
+    "replica": {
+      "subnet_type": "system"
     }
   },
   "output_env_file": ".env",

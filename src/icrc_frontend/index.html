@@ -4,7 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
+  <meta 
+  http-equiv="Content-Security-Policy" 
+  content="
+    connect-src 'self' 
+    http://localhost:* 
+    https://icp0.io 
+    https://*.icp0.io 
+    https://icp-api.io 
+    https://playground.dfinity.network;
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+  "
+/>
+  <title>ICRC Kxvin Token</title>
   <base href="/" />
   <link rel="icon" href="/favicon.ico" />
 </head>

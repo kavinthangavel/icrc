@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "icrc_backend": {
+      "main": "src/icrc_backend/main.mo",
+      "type": "motoko"
+    },
+    "icrc_frontend": {
+      "dependencies": [
+        "icrc_backend"
+      ],
+      "source": [
+        "src/icrc_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icrc_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
